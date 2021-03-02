@@ -12,7 +12,7 @@ package Ej11;
 public class Triangulo extends Figura{
     
     public Triangulo(double base, double altura) {
-        super();
+        super(base,altura);
     }
     
     @Override

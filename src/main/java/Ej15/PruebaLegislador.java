@@ -20,6 +20,13 @@ public class PruebaLegislador {
         lista.add(new Diputado(24,"Granada","PP","Alvberto","Cuevas"));
         for (Legislador l : lista) {
             System.out.println("Es un " + l.getCamara());
+            if(l instanceof Diputado){
+                ((Diputado) l).getNumeroAsiento();
+            }else if(l instanceof Senador){
+                ((Senador) l).getCompletamente();
+            }
+            
+            
         }
     }
 }

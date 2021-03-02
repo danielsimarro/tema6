@@ -14,6 +14,13 @@ public abstract class  Figura {
     private double base;
     private double altura;
 
+    public Figura(double base, double altura) {
+        this.base = base;
+        this.altura = altura;
+    }
+    
+    
+
     public double getBase() {
         return base;
     }

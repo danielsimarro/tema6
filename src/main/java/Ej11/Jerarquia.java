@@ -20,7 +20,7 @@ public class Jerarquia {
         figuras.add(new Triangulo(10, 5)); // Base=10 Altura=5
         figuras.add(new Romboide(15, 5)); // Base=15, Altura=5 
         for (Figura f : figuras) {
-            System.out.println("Área: " + f.calcularArea());
+            System.out.println("Área: " + f.calcularArea() + " cm2");
         }
     }
 

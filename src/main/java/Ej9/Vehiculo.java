@@ -24,5 +24,5 @@ public abstract class Vehiculo {
 //en todas sus subclases
 
 
-//Se puede sobescribir unicamente el metodo getvelocidad ya que es el unico
-//Abstracto
+//Se puede sobescribir todos, los metodos final 
+//no se pueden sobrecribir en las clases hijas
