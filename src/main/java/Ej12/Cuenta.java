@@ -19,7 +19,7 @@ public abstract class Cuenta {
     private Persona cliente;
 
     public Cuenta(Persona cliente) {
-        this.numeroCuenta = numeroCuenta;
+        this.numeroCuenta = numeroAleatorio();
         this.saldo = 0;
         this.cliente = cliente;
     }
@@ -55,7 +55,7 @@ public abstract class Cuenta {
     
     public abstract void retirar(double saldo);
     
-    public String numeroAleatorio(){
+    private String numeroAleatorio(){
         
     String cuenta = "";
      

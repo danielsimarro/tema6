@@ -38,7 +38,7 @@ public class CuentaAhorro extends Cuenta{
 
     @Override
     public void actualizarSaldo(double saldo) {
-        double saldoActualizado = (saldo + (saldo*interes));
+        double saldoActualizado = (saldo + (saldo*interes)-comisionAnual);
         if(saldoActualizado>=0){
             this.setSaldo(saldoActualizado);
         }
