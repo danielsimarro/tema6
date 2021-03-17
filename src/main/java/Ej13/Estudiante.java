@@ -14,8 +14,9 @@ public class Estudiante extends Persona{
     //Atributos de la clase estudiente
     private String IdEstudiante;
 
-    public Estudiante(String nombre, String apellidos, char Nif, Direccion direccion) {
+    public Estudiante(String IdEstudiante, String nombre, String apellidos, String Nif, Direccion direccion) {
         super(nombre, apellidos, Nif, direccion);
+        this.IdEstudiante=IdEstudiante;
     }
     
 

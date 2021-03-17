@@ -14,7 +14,7 @@ public class Profesor extends Persona{
     //Atributos de la clase Profesor
     private String especialidad;
 
-    public Profesor(String especialidad, String nombre, String apellidos, char Nif, Direccion direccion) {
+    public Profesor(String especialidad, String nombre, String apellidos, String Nif, Direccion direccion) {
         super(nombre, apellidos, Nif, direccion);
         this.especialidad = especialidad;
     }

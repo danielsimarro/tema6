@@ -14,10 +14,10 @@ public class Direccion {
     //Atributos de la clase dirección
     private String nombreCalle;
     private String nombreCiudad;
-    private char codigoPostal;
+    private String codigoPostal;
     private String pais;
 
-    public Direccion(String nombreCalle, String nombreCiudad, char codigoPostal, String pais) {
+    public Direccion(String nombreCalle, String nombreCiudad, String codigoPostal, String pais) {
         this.nombreCalle = nombreCalle;
         this.nombreCiudad = nombreCiudad;
         this.codigoPostal = codigoPostal;
@@ -40,11 +40,11 @@ public class Direccion {
         this.nombreCiudad = nombreCiudad;
     }
 
-    public char getCodigoPostal() {
+    public String getCodigoPostal() {
         return codigoPostal;
     }
 
-    public void setCodigoPostal(char codigoPostal) {
+    public void setCodigoPostal(String codigoPostal) {
         this.codigoPostal = codigoPostal;
     }
 

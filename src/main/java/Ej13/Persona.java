@@ -14,10 +14,10 @@ public abstract class  Persona implements Identificable{
     //Atributos de la clase Persona
     private String nombre;
     private String apellidos;
-    private char Nif;
+    private String Nif;
     private Direccion direccion;
 
-    public Persona(String nombre, String apellidos, char Nif, Direccion direccion) {
+    public Persona(String nombre, String apellidos, String Nif, Direccion direccion) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.Nif = Nif;
@@ -40,11 +40,11 @@ public abstract class  Persona implements Identificable{
         this.apellidos = apellidos;
     }
 
-    public char getNif() {
+    public String getNif() {
         return Nif;
     }
 
-    public void setNif(char Nif) {
+    public void setNif(String Nif) {
         this.Nif = Nif;
     }
 
@@ -61,5 +61,9 @@ public abstract class  Persona implements Identificable{
         return "Persona{" + "nombre=" + nombre + ", apellidos=" + apellidos + ", Nif=" + Nif + ", direccion=" + direccion + '}';
     }
     
+////    @Override
+////    public void identificate(){
+//        
+//    }
     
 }
