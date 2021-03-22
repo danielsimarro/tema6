@@ -50,7 +50,9 @@ public class Prueba {
         Robot r2 = new Robot();
         
         listaRobot.add(r2);
-        
+        //Cuando añadimos un nuevo robot y luego hacemos busqueda binaria hay que 
+        //volver a ordenar por el mismo criterio que la busqueda binaria
+        Collections.sort(listaRobot);
         System.out.println("El Robot r2 se encuentra en la posición " + buscarRobot(r2));
         
     }
@@ -71,6 +73,7 @@ public class Prueba {
     
     //Metodo para buscar un cliente en la lista
     public static int buscarRobot(Robot r){
-        return Collections.binarySearch(listaRobot, r, (r1, r2) -> (Integer) r1.getNumeroSerie().compareTo(r2.getNumeroSerie()));
+        
+        return Collections.binarySearch(listaRobot, r);
     }
 }

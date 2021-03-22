@@ -12,7 +12,7 @@ import java.util.Random;
  *
  * @author NitroPc
  */
-public class Robot implements Comparable<Robot>{
+public class Robot implements Comparable<Robot> {
 
     //Atributos de la clase robot
     private int numeroSerie;
@@ -62,11 +62,11 @@ public class Robot implements Comparable<Robot>{
 
             duplicado = comprobarDubplicado(numero);
 
-            if (duplicado == false) {
+            if (!duplicado) {
                 listaSerie.add(numero);
             }
 
-        } while (duplicado == true);
+        } while (duplicado);
 
         return numero;
     }
@@ -77,16 +77,20 @@ public class Robot implements Comparable<Robot>{
         boolean valor = false;
 
         if (!listaSerie.isEmpty()) {
+            
 
-            for (int i = 0; i < listaSerie.size(); i++) {
-                if (numero == listaSerie.get(i)) {
-                    valor = true;
-
-                }
-            }
-
+            valor = listaSerie.contains(Integer.valueOf(numero));
+            
+            
+                
+            //Esta bien 
+//            for (int i = 0; i < listaSerie.size(); i++) {
+//                if (numero == listaSerie.get(i)) {
+//                    valor = true;
+//                }
         }
 
+//        }
         return valor;
     }
 
@@ -101,5 +105,4 @@ public class Robot implements Comparable<Robot>{
         return this.getNumeroSerie() - r.getNumeroSerie();
     }
 
-   
 }
